@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <body>
+    
+    <script>
+      function minMax(nums) {
+        const result = {
+          min:nums[0],
+          max:nums[0]
+        };
+
+        if (nums[0] === undefined) {
+          result.min=null;
+          result.max=null;
+          return result;
+        }
+        for(let i =0;i<nums.length;i++) {
+          if(nums[i]<result.min) {
+            result.min=nums[i];
+          }
+
+          if(nums[i]>result.max) {
+            result.max=nums[i];
+          }
+
+        }
+        
+      return result;
+    }
+    console.log(minMax([3]));
+      
+    </script>
+  </body>
+</html>

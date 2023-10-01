@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <body>
+    
+    <script>
+      function findIndex(array, word) {
+        for(let i=0;i<array.length; i++) {
+          if(array[i] === word) {
+            return true;
+          } 
+        }
+        return false;
+      }
+
+      function unique(array) {
+        let result = [array[0]];
+        for (let i = 1;i<array.length;i++) {
+          if (findIndex(result,array[i])) {
+            continue;
+          } else {
+            result.push(array[i]);
+          }  
+        }
+        return result;
+      }
+
+      console.log(unique(['red','green','green','red']))
+    </script>
+  </body>
+</html>

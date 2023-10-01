@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <body>
+    
+    <script>
+      const nums = [10, 20, 30];
+      nums[2] = 99;
+      console.log(nums);
+
+      getLastValue(nums);
+      arraySwap(nums);
+      
+      
+
+      function getLastValue(array) {
+        const lastValue=array[array.length-1];
+        console.log(lastValue);
+      }
+
+      function arraySwap(array) {
+        const lastValue=array[array.length-1];
+        const firstValue=array[0];
+
+        array[0]=lastValue;
+        array[array.length-1]=firstValue;
+        console.log(array);
+      }
+      
+     /* for(let i = 0; i<11; i+=2) {
+        console.log(i)
+      }
+      
+
+      let i=0
+      while(i<11) {
+        console.log(i);
+        i++
+      }
+
+      for(let i = 5; i>=0;i--) {
+        console.log(i);
+      }
+      
+      
+      let ind = 5;
+      while(ind>=0) {
+        console.log(ind);
+        ind--;
+      }*/
+      addOne(nums);
+      console.log(nums);
+
+      console.log(addOne([1,4,68]));
+
+
+      function addOne(array) {
+        for(i=0;i<array.length;i++){
+        array[i]+=1;
+      }
+      return array;
+      }
+
+    </script>
+  </body>
+</html>

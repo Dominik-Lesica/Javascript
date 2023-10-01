@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <script>
+      /*let promise = new Promise(
+      (resolve, reject) => {
+        let a = 1 + 1;
+        if(a===2) {
+          resolve('Succes');
+        } else {
+          reject('Failed');
+        }
+      });
+
+      promise.then((message) => {
+        console.log(message)
+      }).catch((message) => {
+        console.log(message)
+      })*/
+
+      /*const userLeft = false;
+
+      function promise() {
+        return new Promise((resolve, reject) => {
+          if(userLeft) {
+            reject('User has left')
+          } else {
+            resolve('User is still here')
+          }
+        })
+      }
+
+      promise()
+      .then(
+        (message) => console.log(message)
+      )
+      .catch(
+        (message) => console.log(message)
+      )*/
+
+      const promise1 = new Promise((resolve,reject) => {
+        resolve('Promise 1 fulfilled')
+      });
+
+      const promise2 = new Promise((resolve,reject) => {
+        resolve('Promise 2 fulfilled')
+      });
+
+      const promise3 = new Promise((resolve,reject) => {
+        resolve('Promise 3 fulfilled')
+      });
+
+      Promise.race([
+        promise1,
+        promise2,
+        promise3
+      ]).then((messages) => {
+        console.log(messages);
+      })
+    </script>
+  </body>
+</html>

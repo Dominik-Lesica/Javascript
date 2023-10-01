@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <body>
+    <button class="js-button">Add to cart</button>
+    <p class="js-text"></p>
+    <script>
+      let timeout;
+      const text = document.querySelector('.js-text');
+      const button = document.querySelector('.js-button');
+      
+      const eventListener = () => changeText();
+      button.addEventListener('click', eventListener);
+      
+      function changeText() {
+        clearTimeout(timeout);
+          
+        
+        text.innerHTML = 'Added';
+
+        timeout = setTimeout(() => {
+          text.innerHTML = '';
+        }, 2000)
+      }
+    </script>
+  </body>
+</html>

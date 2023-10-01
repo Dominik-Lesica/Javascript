@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>  
+  </head>
+  <body>
+    <button onclick="
+      side='heads'
+      typeSide()">heads</button>
+    <button onclick="
+    side='tails'
+    typeSide()">Tails</button>
+    <p class="js-text"></p>
+    <script>
+      let side;
+      function typeSide() {
+       
+       if (side==='heads') {
+        document.querySelector('.js-text').innerHTML= `You chose: heads` 
+       } else (
+       document.querySelector('.js-text').innerHTML= `You chose: tails`
+       )
+      }
+    </script>
+  </body>
+</html>

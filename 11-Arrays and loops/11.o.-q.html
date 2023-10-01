@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <body>
+    
+    <script>
+      function searchWord(array) {
+        for(let i=0;i<array.length; i++) {
+          if(array[i] === 'search') {
+            console.log(i);
+            return;
+          } 
+
+        }
+        console.log(-1);
+      }
+
+      searchWord(['green','search', 'red','blue', 'world', 'search'])
+
+      function findIndex(array, word) {
+        for(let i=0;i<array.length; i++) {
+          if(array[i] === word) {
+            console.log(i);
+            return;
+          } 
+
+        }
+        console.log(-1);
+      }
+
+      findIndex(['green', 'red','blue','red'], 'yellow');
+    </script>
+  </body>
+</html>

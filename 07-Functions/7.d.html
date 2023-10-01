@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <script>
+       function convertToFarenheit(celsius) {
+        const farenheit = (celsius*9/5)+32;
+        return farenheit;
+       }
+
+       function convertToCelsius(farenheit) {
+        const celsius = (farenheit-32)*5/9;
+        return celsius;
+       }
+
+       function convertTemperature(degrees, unit) {
+        let convertedTemperature='';
+        if(unit==='C') {
+          convertedTemperature =`${(degrees*9/5)+32} F` 
+        } else if (unit==='F') {
+          convertedTemperature =`${(degrees-32)*5/9} C`
+        } else {
+          console.log('Unit not recognized. Please enter a valid unit.')
+        }
+        return convertedTemperature;
+       }
+
+       console.log(convertToFarenheit(25));
+       console.log(convertToCelsius(86));
+       console.log(convertTemperature(86, 'F'));
+    </script>
+  </body>
+</html>

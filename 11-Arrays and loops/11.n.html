@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <body>
+    
+    <script>
+      function countWords(words) {
+        let wordsObject={};
+        for(let i=0;i<words.length;i++) {
+          let word=words[i];
+          if (!wordsObject[word]) {
+            wordsObject[word] = 1;
+          } else {
+            wordsObject[word]++;
+          }
+        }
+        
+        return wordsObject;
+      }
+      console.log(countWords(['apple', 'grape', 'apple', 'apple','grape', 'bannanas', 'apple']));
+
+      /*Learning to assign a new element to an object
+      let words = {
+        oranges: 1
+      };
+      console.log(words);
+
+      Object.assign( words, {apple: 2, bananas: 6, oranges:2});
+      
+      console.log(words);
+      */
+
+      
+      
+    </script>
+  </body>
+</html>

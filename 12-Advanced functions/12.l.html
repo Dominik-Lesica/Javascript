@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <body>
+    
+    <script>
+      function countPositive(nums) {
+        const positiveNums =nums.filter(num => {
+          return num>=0;
+        });
+        return positiveNums.length;
+      }
+      console.log(countPositive([-2,3,-5,7,10]));
+    </script>
+  </body>
+</html>

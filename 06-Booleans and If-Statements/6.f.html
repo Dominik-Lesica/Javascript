@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Coin flip</title>
+  </head>
+  <body>
+    <script>
+      const randomNum = Math.random();
+      const guess = 'Heads';
+
+      result = randomNum<0.5 ? 'Heads':'Tails';
+      guessResult= result===guess ? 'Correct' : 'Incorrect';
+      console.log(`${result}! Your guess was ${guessResult}.`);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title class="title">App</title>
+  </head>
+  <body>
+    <button onclick="
+      messages++;">Add</button>
+    <button onclick="
+      messages--;">remove</button>
+    
+    <script>
+      let title = document.querySelector('.title');
+      let messages = 0;
+      
+        const interval = setInterval(function() {
+          if (title.innerHTML === 'App' && messages>=0 ) {
+            title.innerHTML = `(${messages}) new messages`;
+          } else {
+            title.innerHTML = 'App';
+          }
+        }, 1000)
+      
+        
+
+    </script>
+  </body>
+</html>

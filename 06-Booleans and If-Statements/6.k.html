@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cart quantity</title>
+  </head>
+  <body>
+    <p>Cart Quantity</p>
+    <p> <button onclick="
+      console.log('Cart Quantity: '+cquan);">Show Quantity</button>
+  
+      <button onclick="
+      if (cquan+1<=10) {
+        cquan++;
+        console.log('Cart Quantity: '+cquan);
+      } else {
+        alert('The cart is full.')
+      }  
+      ">Add to Cart</button>
+  
+      <button onclick="
+      if (cquan+2<=10) {
+        cquan+=2;
+        console.log('Cart Quantity: '+cquan);
+      } else {
+        alert('The cart is full.')
+      }
+      ">+2</button>
+  
+      <button onclick="
+      if (cquan+3 <= 10) {
+        cquan+=3;
+        console.log('Cart Quantity: '+cquan);
+      } else {
+        alert('The cart is full.')
+      }
+      ">+3</button>
+  
+      <button onclick="
+      cquan = 0;
+      console.log('Cart Quantity: '+cquan);">Reset Cart</button>
+    </p>
+    <p>
+      <button onclick="
+        if (cquan-1>=0) {
+          cquan--;
+          console.log('Cart quantity: '+cquan);
+        } else {
+          alert('Not enough items in the cart.');
+        }">Remove from cart</button>
+
+      <button onclick="
+      if (cquan-2>=0) {
+        cquan-=2;
+        console.log('Cart quantity: '+cquan);
+      } else {
+        alert('Not enough items in the cart.');
+      }">-2</button>
+      <button onclick="
+      if (cquan-3>=0) {
+        cquan-=3;
+        console.log('Cart quantity: '+cquan);
+      } else {
+        alert('Not enough items in the cart.');
+      }">-3</button>
+    </p>
+   
+    <script>
+      let cquan = 0;
+    </script>
+  </body>
+</html>
